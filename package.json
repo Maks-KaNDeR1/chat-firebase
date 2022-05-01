@@ -1,5 +1,6 @@
 {
   "name": "chat-firebase",
+  "homepage": "https://maks-kander1.github.io/chat",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -22,6 +23,8 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -47,6 +50,7 @@
   },
   "devDependencies": {
     "activity": "^0.1.1",
+    "gh-pages": "^3.2.3",
     "typescript": "^4.6.4"
   }
 }
