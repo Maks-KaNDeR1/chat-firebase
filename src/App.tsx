@@ -26,7 +26,6 @@ function App() {
   return (
     <div>
            {user ? <Chat /> : <SignIn />}
-
     </div>
   );
 }
