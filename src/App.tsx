@@ -23,6 +23,7 @@ export { db, auth }
 
 function App() {
   const [user] = useAuthState(auth)
+  
   return (
     <div>
            {user ? <Chat /> : <SignIn />}
